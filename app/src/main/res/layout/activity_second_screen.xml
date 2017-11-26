@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_gradient_end"
+tools:context="com.example.shefaliupadhyaya.finalpathdetection.SecondScreen">
+
+<TextView
+    android:id="@+id/txtSpeechInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    android:textColor="@color/white"
+    android:textSize="26dp"
+    android:textStyle="normal" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="121dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_toStartOf="@+id/txtSpeechInput"
+    android:layout_marginEnd="41dp"
+    android:id="@+id/linearLayout">
+
+</LinearLayout>
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:button_image_disabled="@drawable/ic_arrow_forward_black"
+        app:button_image_enabled="@drawable/ic_check_circle_black"
+        app:button_bottom_padding="20dp"
+        app:button_left_padding="20dp"
+        app:button_right_padding="20dp"
+        app:button_top_padding="20dp"
+        app:inner_text="SWIPE RIGHT"
+        app:inner_text_color="@android:color/white"
+        app:inner_text_size="20sp"
+        app:inner_text_top_padding="18dp"
+        app:inner_text_bottom_padding="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp">
+    </com.ebanx.swipebtn.SwipeButton>
+
+    <ImageButton
+        android:id="@+id/btnSpeak1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@null"
+        android:src="@drawable/micro" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap on Mic"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignEnd="@+id/btnSpeak1"
+        android:layout_marginBottom="13dp" />
+
+
+</RelativeLayout>
+

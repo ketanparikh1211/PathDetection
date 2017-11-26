@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gradient_end"
+    tools:context="com.example.shefaliupadhyaya.finalpathdetection.StepCounter">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Step Counter"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:text="0"
+        android:layout_below="@+id/info"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/totalSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="143dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="Total Steps"
+        android:layout_below="@+id/steps"
+        android:layout_toStartOf="@+id/info" />
+    <TextView
+        android:id="@+id/finalsteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:text="0"
+        android:layout_below="@+id/totalSteps"
+        android:layout_alignStart="@+id/totalSteps"
+        android:layout_marginStart="32dp" />
+
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="Direction"
+        android:layout_alignBaseline="@+id/totalSteps"
+        android:layout_alignBottom="@+id/totalSteps"
+        android:layout_toEndOf="@+id/info" />
+
+    <TextView
+        android:id="@+id/dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:text="0"
+        android:layout_alignBaseline="@+id/finalsteps"
+        android:layout_alignBottom="@+id/finalsteps"
+        android:layout_alignStart="@+id/direction"
+        android:layout_marginStart="28dp" />
+
+</RelativeLayout>
